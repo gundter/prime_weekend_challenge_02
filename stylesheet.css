@@ -1,0 +1,14 @@
+.teamButton {
+    display: inline-table;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color: grey;
+}
+
+.button {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color: grey;
+}
