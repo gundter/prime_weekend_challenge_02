@@ -41,7 +41,7 @@ h1 {
 }
 
 .button:active{
-    background: #3787cf;;
+    background: #3787cf;
 }
 .teamSelect{
     padding: 0 auto;
@@ -54,7 +54,7 @@ h1 {
 }
 .container {
     padding: 0 auto;
-    margin: 0 auto
+    margin: 0 auto;
 }
 .container div {
     height: 70px;

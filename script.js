@@ -31,10 +31,6 @@ $(document).ready(function(){
     //    console.log(people);
     //});
     //console.log(people);
-    $(".teamSelect").on('click', 'div', function(){
-        teamSize = $(this).data("size");
-
-    });
 
     $('#refresh').on('click', function(){
         if(teamSize == 0){
@@ -57,5 +53,10 @@ $(document).ready(function(){
                 count = 1;
             }
         }
+    });
+
+    $(".teamSelect").on('click', 'div', function(){
+        teamSize = $(this).data("size");
+
     });
 });
