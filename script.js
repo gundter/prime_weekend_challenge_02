@@ -24,6 +24,13 @@ function emptyChildren(){
 
 $(document).ready(function(){
 
+    //$('#userName').on('click', function(){
+    //    var nameSubmitted = document.getElementById('enteredName').elements[0].value;
+    //    console.log(nameSubmitted);
+    //    people.push(nameSubmitted);
+    //    console.log(people);
+    //});
+    //console.log(people);
     $(".teamSelect").on('click', 'div', function(){
         teamSize = $(this).data("size");
 
