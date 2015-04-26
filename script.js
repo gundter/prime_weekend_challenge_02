@@ -24,6 +24,11 @@ function emptyChildren(){
 
 $(document).ready(function(){
 
+    $(".teamSelect").on('click', 'div', function(){
+        teamSize = $(this).data("size");
+
+    });
+
     $('#refresh').on('click', function(){
         if(teamSize == 0){
             alert("Select a team size!");
@@ -32,9 +37,7 @@ $(document).ready(function(){
 
         emptyChildren();
         for(var j = 0; j <= teamSize; j++){
-            console.log(teamSize);
-            console.log("sup");
-            $('#team' + j).prepend("<p class='newEntry'>Team" + j + "</p>");
+            $('#team' + j).prepend("<p class='newEntry'>Team " + j + "</p>");
             $('.newEntry').hide().fadeIn("fast");
         }
         var count = 1;
@@ -47,10 +50,5 @@ $(document).ready(function(){
                 count = 1;
             }
         }
-    });
-
-    $(".teamSelect").on('click', 'div', function(){
-        teamSize = $(this).data("size");
-
     });
 });

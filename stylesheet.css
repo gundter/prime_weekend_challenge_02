@@ -1,3 +1,13 @@
+body {
+    background-image: url("bodybackground.png");
+}
+
+h1 {
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #3cb0fd;
+}
+
 .button {
     background: #5d6e7a;
     background-image: -webkit-linear-gradient(top, #5d6e7a, #c9d7e0);
@@ -11,7 +21,7 @@
     -webkit-box-shadow: 0px 1px 3px #666666;
     -moz-box-shadow: 0px 1px 3px #666666;
     box-shadow: 0px 1px 3px #666666;
-    font-family: Georgia;
+    font-family: Georgia, serif;
     color: #ffffff;
     font-size: 30px;
     padding: 10px 20px 10px 20px;
@@ -28,13 +38,30 @@
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
 }
+
+.button:active{
+    background: #3787cf;;
+}
 .teamSelect{
+    padding: 0 auto;
+    margin: 0 auto;
+}
+.teamSelect div{
     display: inline-block;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+.container {
+    padding: 0 auto;
+    margin: 0 auto
 }
 .container div {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     display: inline-table;
     text-align: center;
-    font-family: "Times New Roman", serif;
+    font-family: Georgia, serif;
+    padding: 0 auto;
+    margin: 0 auto;
+    color: #3cb0fd;
 }
