@@ -12,3 +12,7 @@
     text-align: center;
     background-color: #d3d3d3;
 }
+.container ul {
+    display: inline-block;
+    list-style-type: none;
+}
