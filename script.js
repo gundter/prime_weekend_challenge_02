@@ -186,88 +186,53 @@ $(document).ready(function(){
 
     $('#refresh').on('click', function(){
         people.length = 0;
+        //resetArray(team1, team2, team3, team4, team5, team6, team7, team8, team9, team10);
+        //console.log(people);
+        //console.log(people.length);
+        //if (team10.length != 0){
+            $('.team1').prepend("<li class ='header'>Team 1</li>");
+            for (var j = 0; j < team1.length; j++){
+                $('.team1').append("<li class='newBullet'>" + team1[j] + "</li>");
+            }
+            $('.team2').prepend("<li class='header'>Team 2</li>");
+            for (var j = 0; j < team2.length; j++){
+                $('.team2').append("<li class='newBullet'>" + team2[j] + "</li>");
+            }
+            $('.team3').prepend("<li class='header'>Team 3</li>");
+            for (var j = 0; j < team3.length; j++){
+                $('.team3').append("<li class='newBullet'>" + team3[j] + "</li>");
+            }
+            $('.team4').prepend("<li>Team 4</li>");
+            for (var j = 0; j < team4.length; j++){
+                $('.team4').append("<li class='newBullet'>" + team4[j] + "</li>");
+            }
+            $('.team5').prepend("<li>Team 5</li>");
+            for (var j = 0; j < team5.length; j++){
+                $('.team5').append("<li class='newBullet'>" + team5[j] + "</li>");
+            }
+            $('.team6').prepend("<li>Team 6</li>");
+            for (var j = 0; j < team6.length; j++){
+                $('.team6').append("<li class='newBullet'>" + team6[j] + "</li>");
+            }
+            $('.team7').prepend("<li>Team 7</li>");
+            for (var j = 0; j < team7.length; j++){
+                $('.team7').append("<li class='newBullet'>" + team7[j] + "</li>");
+            }
+            $('.team8').prepend("<li>Team 8</li>");
+            for (var j = 0; j < team8.length; j++){
+                $('.team8').append("<li class='newBullet'>" + team8[j] + "</li>");
+            }
+            $('.team9').prepend("<li>Team 9</li>");
+            for (var j = 0; j < team9.length; j++){
+                $('.team9').append("<li class='newBullet'>" + team9[j] + "</li>");
+            }
+            $('.team10').prepend("<li>Team 10</li>");
+            for (var j = 0; j < team10.length; j++){
+                $('.team10').append("<li class='newBullet'>" + team10[j] + "</li>");
+            }
+        //}
         resetArray(team1, team2, team3, team4, team5, team6, team7, team8, team9, team10);
-        console.log(people);
-        console.log(people.length);
     });
 
-    //$('#refresh').on('click', function(){
-    //   $('.team1').prepend("<li>Team 1</li>");
-    //    for (var i = 0; i < team2.length; i++){
-    //        $('.team1').append("<li class='newBullet'>" + team2[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
-    //
-    //$('#refresh').on('click', function(){
-    //    $('.team2').prepend("<li>Team 2</li>");
-    //    for (var i = 0; i < team3.length; i++){
-    //        $('.team2').append("<li class='newBullet'>" + team3[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
-    //
-    //$('#refresh').on('click', function(){
-    //    $('.team3').prepend("<li>Team 3</li>");
-    //    for (var i = 0; i < team4.length; i++){
-    //        $('.team3').append("<li class='newBullet'>" + team4[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
-    //
-    //$('#refresh').on('click', function(){
-    //    $('.team4').prepend("<li>Team 4</li>");
-    //    for (var i = 0; i < team5.length; i++){
-    //        $('.team4').append("<li class='newBullet'>" + team5[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
-    //
-    //$('#refresh').on('click', function(){
-    //    $('.team5').prepend("<li>Team 5</li>");
-    //    for (var i = 0; i < team6.length; i++){
-    //        $('.team5').append("<li class='newBullet'>" + team6[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
-    //
-    //$('#refresh').on('click', function(){
-    //    $('.team6').prepend("<li>Team 6</li>");
-    //    for (var i = 0; i < team7.length; i++){
-    //        $('.team6').append("<li class='newBullet'>" + team7[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
-    //
-    //$('#refresh').on('click', function(){
-    //    $('.team7').prepend("<li>Team 7</li>");
-    //    for (var i = 0; i < team8.length; i++){
-    //        $('.team7').append("<li class='newBullet'>" + team8[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
-    //
-    //$('#refresh').on('click', function(){
-    //    $('.team8').prepend("<li>Team 8</li>");
-    //    for (var i = 0; i < team9.length; i++){
-    //        $('.team8').append("<li class='newBullet'>" + team9[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
-    //
-    //$('#refresh').on('click', function(){
-    //    $('.team9').prepend("<li>Team 9</li>");
-    //    for (var i = 0; i < team10.length; i++){
-    //        $('.team9').append("<li class='newBullet'>" + team10[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
-    //
-    //$('#refresh').on('click', function(){
-    //    $('.team10').prepend("<li>Team 10</li>");
-    //    for (var i = 0; i < people.length; i++){
-    //        $('.team10').append("<li class='newBullet'>" + people[i] + "</li>");
-    //        $('.newBullet').hide().delay(i * 1000).fadeIn('slow');
-    //    }
-    //});
+
 });
