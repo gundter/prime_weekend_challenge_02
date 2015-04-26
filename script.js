@@ -2,6 +2,7 @@
  * Created by Prime on 4/24/15.
  */
 var people = ["Erik", "Aaron", "Alicia", "Casie", "Clare", "Cody", "Jeanne", "Kaitlin", "Kelly", "Luke", "Mary", "Michael", "Michelle", "Rom", "Steve", "Terry", "Tracy", "Vince", "Brian", "Chelsea"];
+console.log(people);
 
 var team1 = [];
 var team2 = [];
@@ -14,40 +15,59 @@ var team8 = [];
 var team9 = [];
 var team10 = [];
 
-function resetArray (team1, team2, team3, team4, team5, team6, team7, team8, team9, team10) {
+function resetArray (teamOne, teamTwo, teamThree, teamFour, teamFive, teamSix, teamSeven, teamEight, teamNine, teamTen) {
     var i;
-    people = [];
-    for ( i = 0; i < team1.length; i++ ){
-        people.push(team1[i]);
+    for ( i = 0; i < teamOne.length; i++ ){
+        people.push(teamOne[i]);
+        console.log(people);
     }
-    for ( i = 0; i < team2.length; i++ ){
-        people.push(team2[i]);
+    teamOne.length = 0;
+    for ( i = 0; i < teamTwo.length; i++ ){
+        people.push(teamTwo[i]);
+        console.log(people);
     }
-    for ( i = 0; i < team3.length; i++ ){
-        people.push(team3[i]);
+    teamTwo.length = 0;
+    for ( i = 0; i < teamThree.length; i++ ){
+        people.push(teamThree[i]);
+        console.log(people);
     }
-    for ( i = 0; i < team4.length; i++ ){
-        people.push(team4[i]);
+    teamThree.length = 0;
+    for ( i = 0; i < teamFour.length; i++ ){
+        people.push(teamFour[i]);
+        console.log(people);
     }
-    for ( i = 0; i < team5.length; i++ ){
-        people.push(team5[i]);
+    teamFour.length = 0;
+    for ( i = 0; i < teamFive.length; i++ ){
+        people.push(teamFive[i]);
+        console.log(people);
     }
-    for ( i = 0; i < team6.length; i++ ){
-        people.push(team6[i]);
+    teamFive.length = 0;
+    for ( i = 0; i < teamSix.length; i++ ){
+        people.push(teamSix[i]);
+        console.log(people);
     }
-    for ( i = 0; i < team7.length; i++ ){
-        people.push(team7[i]);
+    teamSix.length = 0;
+    for ( i = 0; i < teamSeven.length; i++ ){
+        people.push(teamSeven[i]);
+        console.log(people);
     }
-    for ( i = 0; i < team8.length; i++ ){
-        people.push(team8[i]);
+    teamSeven.length = 0;
+    for ( i = 0; i < teamEight.length; i++ ){
+        people.push(teamEight[i]);
+        console.log(people);
     }
-    for ( i = 0; i < team9.length; i++ ){
-        people.push(team9[i]);
+    teamEight.length = 0;
+    for ( i = 0; i < teamNine.length; i++ ){
+        people.push(teamNine[i]);
+        console.log(people);
     }
-    for ( i = 0; i < team10.length; i++ ){
-        people.push(team10[i]);
+    teamNine.length = 0;
+    for ( i = 0; i < teamTen.length; i++ ){
+        people.push(teamTen[i]);
+        console.log(people);
     }
-    return people
+    teamTen.length = 0;
+    console.log(people);
 }
 
 function shuffleArray(array) {
@@ -66,7 +86,7 @@ $(document).ready(function(){
         console.log("btn2 works!");
         people = shuffleArray(people);
         team1 = people.splice(0, 10);
-        team2 = people;
+        team2 = people.splice(0, 10);
     });
 
     $("#btn3").on('click', function(){
@@ -74,7 +94,10 @@ $(document).ready(function(){
         people = shuffleArray(people);
         team1 = people.splice(0, 7);
         team2 = people.splice(0, 7);
-        team3 = people;
+        team3 = people.splice(0, 6);
+        console.log(team1);
+        console.log(team2);
+        console.log(team3);
     });
 
     $("#btn4").on('click', function() {
@@ -83,7 +106,7 @@ $(document).ready(function(){
         team1 = people.splice(0, 5);
         team2 = people.splice(0, 5);
         team3 = people.splice(0, 5);
-        team4 = people;
+        team4 = people.splice(0, 5);
     });
 
     $("#btn5").on('click', function() {
@@ -93,7 +116,7 @@ $(document).ready(function(){
         team2 = people.splice(0, 4);
         team3 = people.splice(0, 4);
         team4 = people.splice(0, 4);
-        team5 = people;
+        team5 = people.splice(0, 4);
     });
 
     $("#btn6").on('click', function() {
@@ -104,7 +127,7 @@ $(document).ready(function(){
         team3 = people.splice(0, 3);
         team4 = people.splice(0, 3);
         team5 = people.splice(0, 3);
-        team6 = people;
+        team6 = people.splice(0, 3);
     });
 
     $("#btn7").on('click', function() {
@@ -116,7 +139,7 @@ $(document).ready(function(){
         team4 = people.splice(0, 3);
         team5 = people.splice(0, 3);
         team6 = people.splice(0, 3);
-        team7 = people;
+        team7 = people.splice(0, 2);
     });
 
     $("#btn8").on('click', function() {
@@ -129,7 +152,7 @@ $(document).ready(function(){
         team5 = people.splice(0, 2);
         team6 = people.splice(0, 2);
         team7 = people.splice(0, 2);
-        team8 = people;
+        team8 = people.splice(0, 2);
     });
 
     $("#btn9").on('click', function() {
@@ -143,7 +166,7 @@ $(document).ready(function(){
         team6 = people.splice(0, 2);
         team7 = people.splice(0, 2);
         team8 = people.splice(0, 2);
-        team9 = people;
+        team9 = people.splice(0, 2);
     });
 
     $("#btn10").on('click', function() {
@@ -158,11 +181,12 @@ $(document).ready(function(){
         team7 = people.splice(0, 2);
         team8 = people.splice(0, 2);
         team9 = people.splice(0, 2);
-        team10 = people;
+        team10 = people.splice(0, 2);
     });
 
     $('#refresh').on('click', function(){
-        people = resetArray(team1,team2, team3,team4,team5,team6,team7,team8,team9,team10);
+        people.length = 0;
+        resetArray(team1, team2, team3, team4, team5, team6, team7, team8, team9, team10);
         console.log(people);
         console.log(people.length);
     });
