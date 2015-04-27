@@ -24,13 +24,15 @@ function emptyChildren(){
 
 $(document).ready(function(){
 
-    //$('#userName').on('click', function(){
-    //    var nameSubmitted = document.getElementById('enteredName').elements[0].value;
-    //    console.log(nameSubmitted);
-    //    people.push(nameSubmitted);
-    //    console.log(people);
-    //});
-    //console.log(people);
+    $('#userName').on('click', function(){
+        console.log("Submit name button");
+        var enteredName = $('#name');
+        var nameSubmitted = enteredName.val();
+        enteredName.val('');
+        console.log(nameSubmitted);
+        people.push(nameSubmitted);
+        console.log(people);
+    });
 
     $('#refresh').on('click', function(){
         if(teamSize == 0){
@@ -47,7 +49,7 @@ $(document).ready(function(){
         shuffleArray(people);
         for(var i=0; i < people.length; i++){
             $("#team" + count).append("<p class='newEntry'>" + people[i] + "</p>");
-            $('.newEntry').hide().delay(i * 1000).fadeIn('slow');
+            $('.newEntry').hide().delay(i * 500).fadeIn('slow');
             count++;
             if(count > teamSize){
                 count = 1;
